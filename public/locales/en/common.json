@@ -1,0 +1,23 @@
+{
+  "site.name": "Stillhilfe",
+  "language.switch": "Switch language",
+  "hero.tag": "Free Resources",
+  "hero.title": "Breastfeeding Support",
+  "hero.titleLine2": "In Your Language",
+  "hero.subtitle": "Download free brochures with expert guidance on breastfeeding and lactation — available in multiple languages to support every mother.",
+  "hero.cta": "Browse Brochures",
+  "hero.ctaSecondary": "Learn More",
+  "hero.statLanguages": "10+",
+  "hero.statLanguagesLabel": "Languages",
+  "hero.statBrochures": "20+",
+  "hero.statBrochuresLabel": "Brochures",
+  "hero.statFree": "100%",
+  "hero.statFreeLabel": "Free",
+  "brochures.title": "Available Brochures",
+  "brochures.subtitle": "Select and download brochures in your preferred language. All materials are free and professionally created.",
+  "brochures.download": "Download PDF",
+  "brochures.emptyTitle": "Brochures Coming Soon",
+  "brochures.emptyText": "We are preparing materials. Please check back soon!",
+  "footer.copyright": "© 2026 Stillhilfe",
+  "footer.madeWith": "Made with ❤️ for mothers everywhere"
+}
