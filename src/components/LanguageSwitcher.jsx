@@ -21,11 +21,11 @@ export default function LanguageSwitcher({ languages }) {
     <div className="relative" ref={ref}>
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-2 px-3 py-2 rounded-lg border border-white/10 hover:border-white/25 bg-white/5 hover:bg-white/10 transition-all text-sm font-medium"
+        className="flex items-center gap-2 px-3 py-2 rounded-lg border border-forest-200 hover:border-forest-300 bg-white/60 hover:bg-white/90 transition-all text-sm font-medium text-forest-800"
         aria-label={t('language.switch', 'Switch language')}
         id="language-switcher-btn"
       >
-        <svg className="w-4 h-4 text-brand-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <svg className="w-4 h-4 text-forest-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
         </svg>
         <span className="uppercase tracking-wider">{currentLang}</span>
@@ -45,13 +45,13 @@ export default function LanguageSwitcher({ languages }) {
               }}
               className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors flex items-center justify-between ${
                 currentLang === lng
-                  ? 'bg-brand-500/20 text-brand-300 font-semibold'
-                  : 'hover:bg-white/10 text-white/70 hover:text-white'
+                  ? 'bg-forest-100 text-forest-700 font-semibold'
+                  : 'hover:bg-forest-50 text-forest-600 hover:text-forest-800'
               }`}
               id={`lang-option-${lng}`}
             >
               <span>{LANGUAGE_NAMES[lng] || lng}</span>
-              <span className="text-xs uppercase text-white/30">{lng}</span>
+              <span className="text-xs uppercase text-forest-400">{lng}</span>
             </button>
           ))}
         </div>

@@ -20,7 +20,6 @@ function App() {
         }
       })
       .catch(() => {
-        // Fallback: no brochures yet
         setBrochures([])
       })
   }, [])
@@ -28,9 +27,9 @@ function App() {
   return (
     <div className="relative min-h-screen">
       {/* Background glow orbs */}
-      <div className="glow-orb w-[600px] h-[600px] bg-brand-500 -top-40 -left-40 fixed" />
-      <div className="glow-orb w-[500px] h-[500px] bg-warm-500 top-1/3 -right-60 fixed" />
-      <div className="glow-orb w-[400px] h-[400px] bg-sage-500 bottom-0 left-1/4 fixed" />
+      <div className="glow-orb w-[600px] h-[600px] bg-leaf-300 -top-40 -left-40 fixed" />
+      <div className="glow-orb w-[500px] h-[500px] bg-rose-300 top-1/3 -right-60 fixed" />
+      <div className="glow-orb w-[400px] h-[400px] bg-earth-300 bottom-0 left-1/4 fixed" />
 
       <Header languages={availableLanguages} />
       <main>

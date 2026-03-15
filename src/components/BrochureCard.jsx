@@ -10,17 +10,17 @@ export default function BrochureCard({ brochure, index }) {
     >
       {/* PDF icon and title */}
       <div className="flex items-start gap-4">
-        <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-brand-500/20 to-brand-600/20 flex items-center justify-center border border-brand-500/10">
-          <svg className="w-6 h-6 text-brand-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-forest-50 flex items-center justify-center border border-forest-100">
+          <svg className="w-6 h-6 text-forest-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
           </svg>
         </div>
         <div className="flex-1 min-w-0">
-          <h3 className="font-semibold text-white/90 truncate text-sm">
+          <h3 className="font-semibold text-forest-800 truncate text-sm">
             {brochure.title || brochure.filename}
           </h3>
           {brochure.description && (
-            <p className="text-xs text-white/40 mt-1 line-clamp-2">
+            <p className="text-xs text-earth-400 mt-1 line-clamp-2">
               {brochure.description}
             </p>
           )}
@@ -28,7 +28,7 @@ export default function BrochureCard({ brochure, index }) {
       </div>
 
       {/* Meta info */}
-      <div className="flex items-center gap-2 text-xs text-white/30">
+      <div className="flex items-center gap-2 text-xs text-earth-400">
         <span className="language-badge">{brochure.language}</span>
         {brochure.size && <span>• {brochure.size}</span>}
       </div>

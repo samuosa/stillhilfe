@@ -4,11 +4,11 @@
 
 @layer base {
   :root {
-    --gradient-primary: linear-gradient(135deg, #e34d82 0%, #d12d63 50%, #b31e4c 100%);
-    --gradient-warm: linear-gradient(135deg, #f6e197 0%, #e8b83a 50%, #d49a28 100%);
-    --gradient-sage: linear-gradient(135deg, #a4d0a8 0%, #519758 50%, #3f7b45 100%);
-    --glass-bg: rgba(255, 255, 255, 0.08);
-    --glass-border: rgba(255, 255, 255, 0.12);
+    --gradient-primary: linear-gradient(135deg, #3d8c4e 0%, #255a32 100%);
+    --gradient-rose: linear-gradient(135deg, #f87490 0%, #ef4b6c 50%, #dc2854 100%);
+    --gradient-earth: linear-gradient(135deg, #d1b18a 0%, #b67e50 50%, #a86a44 100%);
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(37, 90, 50, 0.12);
   }
 
   * {
@@ -19,14 +19,14 @@
 
   body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    background-color: #0f0f14;
-    color: #f0ebe3;
+    background-color: #f4faf4;
+    color: #1c3b25;
     min-height: 100vh;
     overflow-x: hidden;
   }
 
   ::selection {
-    background-color: #e34d82;
+    background-color: #ef4b6c;
     color: white;
   }
 }
@@ -39,17 +39,18 @@
     border: 1px solid var(--glass-border);
     border-radius: 1rem;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 24px rgba(28, 59, 37, 0.06);
   }
 
   .glass-card:hover {
-    background: rgba(255, 255, 255, 0.12);
-    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.9);
+    border-color: rgba(37, 90, 50, 0.2);
     transform: translateY(-4px);
-    box-shadow: 0 20px 60px rgba(227, 77, 130, 0.15);
+    box-shadow: 0 20px 60px rgba(61, 140, 78, 0.12);
   }
 
   .gradient-text {
-    background: linear-gradient(135deg, #ee7aa5 0%, #e34d82 40%, #d49a28 100%);
+    background: linear-gradient(135deg, #3d8c4e 0%, #255a32 40%, #a86a44 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -72,16 +73,16 @@
 
   .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(227, 77, 130, 0.3);
+    box-shadow: 0 10px 30px rgba(61, 140, 78, 0.25);
   }
 
   .btn-secondary {
     background: transparent;
-    color: #f0ebe3;
+    color: #255a32;
     padding: 0.75rem 1.5rem;
     border-radius: 0.75rem;
     font-weight: 500;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(37, 90, 50, 0.25);
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
@@ -91,8 +92,8 @@
   }
 
   .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.4);
+    background: rgba(37, 90, 50, 0.06);
+    border-color: rgba(37, 90, 50, 0.4);
   }
 
   .language-badge {
@@ -105,22 +106,22 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    background: rgba(227, 77, 130, 0.15);
-    color: #ee7aa5;
-    border: 1px solid rgba(227, 77, 130, 0.2);
+    background: rgba(239, 75, 108, 0.1);
+    color: #dc2854;
+    border: 1px solid rgba(239, 75, 108, 0.15);
   }
 
   .glow-orb {
     position: absolute;
     border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.15;
+    filter: blur(100px);
+    opacity: 0.12;
     pointer-events: none;
   }
 
   .section-divider {
     height: 1px;
-    background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent);
+    background: linear-gradient(to right, transparent, rgba(37, 90, 50, 0.12), transparent);
     margin: 0 auto;
     max-width: 80%;
   }

@@ -7,8 +7,8 @@ export default function Hero() {
     <section className="relative py-24 sm:py-32 lg:py-40 overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Tag */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-400/20 bg-brand-500/10 text-brand-300 text-xs font-semibold tracking-wider uppercase mb-8 animate-fade-in">
-          <span className="w-1.5 h-1.5 rounded-full bg-brand-400 animate-pulse" />
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-rose-200 bg-rose-50 text-rose-600 text-xs font-semibold tracking-wider uppercase mb-8 animate-fade-in">
+          <span className="w-1.5 h-1.5 rounded-full bg-rose-400 animate-pulse" />
           {t('hero.tag', 'Free Resources')}
         </div>
 
@@ -16,11 +16,11 @@ export default function Hero() {
         <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight mb-6 animate-slide-up">
           <span className="gradient-text">{t('hero.title', 'Breastfeeding Support')}</span>
           <br />
-          <span className="text-white/90">{t('hero.titleLine2', 'In Your Language')}</span>
+          <span className="text-forest-800">{t('hero.titleLine2', 'In Your Language')}</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg sm:text-xl text-white/50 max-w-2xl mx-auto mb-10 animate-slide-up stagger-2 leading-relaxed">
+        <p className="text-lg sm:text-xl text-earth-600 max-w-2xl mx-auto mb-10 animate-slide-up stagger-2 leading-relaxed">
           {t('hero.subtitle', 'Download free brochures with expert guidance on breastfeeding and lactation — available in multiple languages to support every mother.')}
         </p>
 
@@ -40,22 +40,22 @@ export default function Hero() {
         {/* Stats */}
         <div className="grid grid-cols-3 gap-6 mt-16 max-w-md mx-auto animate-slide-up stagger-4">
           <div>
-            <div className="font-display text-2xl sm:text-3xl font-bold text-brand-400">
+            <div className="font-display text-2xl sm:text-3xl font-bold text-rose-500">
               {t('hero.statLanguages', '10+')}
             </div>
-            <div className="text-xs text-white/40 mt-1">{t('hero.statLanguagesLabel', 'Languages')}</div>
+            <div className="text-xs text-earth-400 mt-1">{t('hero.statLanguagesLabel', 'Languages')}</div>
           </div>
           <div>
-            <div className="font-display text-2xl sm:text-3xl font-bold text-warm-400">
+            <div className="font-display text-2xl sm:text-3xl font-bold text-earth-500">
               {t('hero.statBrochures', '20+')}
             </div>
-            <div className="text-xs text-white/40 mt-1">{t('hero.statBrochuresLabel', 'Brochures')}</div>
+            <div className="text-xs text-earth-400 mt-1">{t('hero.statBrochuresLabel', 'Brochures')}</div>
           </div>
           <div>
-            <div className="font-display text-2xl sm:text-3xl font-bold text-sage-400">
+            <div className="font-display text-2xl sm:text-3xl font-bold text-forest-500">
               {t('hero.statFree', '100%')}
             </div>
-            <div className="text-xs text-white/40 mt-1">{t('hero.statFreeLabel', 'Free')}</div>
+            <div className="text-xs text-earth-400 mt-1">{t('hero.statFreeLabel', 'Free')}</div>
           </div>
         </div>
       </div>
