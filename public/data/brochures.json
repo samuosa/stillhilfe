@@ -3,5 +3,15 @@
     "en",
     "de"
   ],
-  "brochures": []
+  "brochures": [
+    {
+      "id": "brochure-0",
+      "filename": "DE_de.pdf",
+      "title": "DE",
+      "language": "de",
+      "pdfUrl": "https://drive.google.com/file/d/11sOiAQ7h1yb2rbtV4o7kRm6omMDju_zt/view?usp=sharing",
+      "size": "248.5 KB",
+      "lastUpdated": "2026-03-15T18:50:27.625Z"
+    }
+  ]
 }
